@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     CardView playerCardView;
     CardView playlistsCardView;
     CardView albumsCardView;
-    CardView settingsCardView;
+    CardView artistsCardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +21,12 @@ public class MainActivity extends AppCompatActivity {
         playerCardView = (CardView) findViewById(R.id.menuPlayer);
         playlistsCardView = (CardView) findViewById(R.id.menuPlaylists);
         albumsCardView = (CardView) findViewById(R.id.menuAlbums);
-        settingsCardView = (CardView) findViewById(R.id.menuSettings);
+        artistsCardView = (CardView) findViewById(R.id.menuArtists);
 
         playerCardView.setOnClickListener(playerTextViewOnClickListener);
         playlistsCardView.setOnClickListener(playlistsTextViewOnClickListener);
         albumsCardView.setOnClickListener(albumsTextViewOnClickListener);
-        settingsCardView.setOnClickListener(settingsTextViewOnClickListener);
+        artistsCardView.setOnClickListener(artistTextViewOnClickListener);
 
     }
 
@@ -49,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    final View.OnClickListener settingsTextViewOnClickListener = new View.OnClickListener() {
+    final View.OnClickListener artistTextViewOnClickListener = new View.OnClickListener() {
         public void onClick(final View v) {
-            openSettingsList(settingsCardView);
+            openArtistsList(artistsCardView);
         }
     };
 
@@ -66,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openPlaylistsList(View view) {
-        Intent intent = new Intent(this, PlaylistsActivity.class);
+        Intent intent = new Intent(this, SongsActivity.class);
         startActivity(intent);
     }
 
-    public void openSettingsList(View view) {
-        Intent intent = new Intent(this, SettingsActivity.class);
+    public void openArtistsList(View view) {
+        Intent intent = new Intent(this, ArtistsActivity.class);
         startActivity(intent);
     }
 
