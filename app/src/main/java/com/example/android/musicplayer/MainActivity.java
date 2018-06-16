@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     CardView playlistsCardView;
     CardView albumsCardView;
     CardView artistsCardView;
+    CardView numbersCardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +23,14 @@ public class MainActivity extends AppCompatActivity {
         playlistsCardView = (CardView) findViewById(R.id.menuPlaylists);
         albumsCardView = (CardView) findViewById(R.id.menuAlbums);
         artistsCardView = (CardView) findViewById(R.id.menuArtists);
+        numbersCardView = (CardView) findViewById(R.id.menuNumbers);
+
 
         playerCardView.setOnClickListener(playerTextViewOnClickListener);
         playlistsCardView.setOnClickListener(playlistsTextViewOnClickListener);
         albumsCardView.setOnClickListener(albumsTextViewOnClickListener);
         artistsCardView.setOnClickListener(artistTextViewOnClickListener);
+        numbersCardView.setOnClickListener(numbersTextViewOnClickListener);
 
     }
 
@@ -54,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    final View.OnClickListener numbersTextViewOnClickListener = new View.OnClickListener() {
+        public void onClick(final View v) {
+            openNumbersList(numbersCardView);
+        }
+    };
+
     public void openAlbumsList(View view) {
         Intent intent = new Intent(this, AlbumsActivity.class);
         startActivity(intent);
@@ -71,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openArtistsList(View view) {
         Intent intent = new Intent(this, ArtistsActivity.class);
+        startActivity(intent);
+    }
+
+    public void openNumbersList(View view) {
+        Intent intent = new Intent(this, NumbersActivity.class);
         startActivity(intent);
     }
 

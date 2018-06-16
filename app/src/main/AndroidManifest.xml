@@ -24,6 +24,8 @@
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".ArtistsActivity" android:label="@string/artists"
             android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NumbersActivity" android:label="@string/numbers"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
