@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Music Player</string>
     <string name="player">Player</string>
-    <string name="playlists">Playlists</string>
+    <string name="songs">Songs</string>
     <string name="albums">Albums</string>
-    <string name="settings">Settings</string>
+    <string name="artists">Artists</string>
     <string name="showSongLyrics">Show song lyrics</string>
     <string name="continueFromLastSong">Play from last song</string>
     <string name="anonymousData">Send anonymous usage data</string>

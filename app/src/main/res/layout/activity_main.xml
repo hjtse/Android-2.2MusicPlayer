@@ -88,7 +88,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="@string/playlists"
+                        android:text="@string/songs"
                         style="@style/menuItemText"
                         android:textAlignment="center"/>
                 </LinearLayout>
@@ -176,7 +176,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="@string/settings"
+                        android:text="@string/artists"
                         style="@style/menuItemText"
                         android:textAlignment="center"/>
                 </LinearLayout>
