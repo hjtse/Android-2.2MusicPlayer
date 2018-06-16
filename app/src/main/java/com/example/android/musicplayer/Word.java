@@ -2,40 +2,39 @@ package com.example.android.musicplayer;
 
 /**
  * {@link Word} represents a vocabulary word that the user wants to learn.
- * It contains a default translation and a Miwok translation for that word.
+ * It contains a primary and secondary title
  */
 public class Word {
 
-    /** Default translation for the word */
-    private String mDefaultTranslation;
+    /** Main text */
+    private String mMainText;
 
-    /** Miwok translation for the word */
-    private String mMiwokTranslation;
+    /** Secondary text */
+    private String mSecondaryText;
 
     /**
      * Create a new Word object.
      *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param miwokTranslation is the word in the Miwok language
+     * @param mainText primary title
+     * @param secondaryText subtitle
      */
-    public Word(String defaultTranslation, String miwokTranslation) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+    public Word(String mainText, String secondaryText) {
+        mMainText = mainText;
+        mSecondaryText = secondaryText;
     }
 
     /**
-     * Get the default translation of the word.
+     * Get the Primary Text
      */
-    public String getDefaultTranslation() {
-        return mDefaultTranslation;
+    public String getMainText() {
+        return mMainText;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the Secondary Text
      */
-    public String getMiwokTranslation() {
-        return mMiwokTranslation;
+    public String getSecondaryText() {
+        return mSecondaryText;
     }
 
 }

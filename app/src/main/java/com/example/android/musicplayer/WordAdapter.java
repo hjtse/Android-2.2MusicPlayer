@@ -33,17 +33,17 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word currentWord = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
-        miwokTextView.setText(currentWord.getMiwokTranslation());
-
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
+        TextView mainTextView = (TextView) listItemView.findViewById(R.id.main_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        defaultTextView.setText(currentWord.getDefaultTranslation());
+        mainTextView.setText(currentWord.getMainText());
+
+        // Find the TextView in the list_item.xml layout with the ID version_name
+        TextView secondaryTextView = (TextView) listItemView.findViewById(R.id.secondary_text_view);
+        // Get the version name from the current AndroidFlavor object and
+        // set this text on the name TextView
+        secondaryTextView.setText(currentWord.getSecondaryText());
 
         // Return the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView

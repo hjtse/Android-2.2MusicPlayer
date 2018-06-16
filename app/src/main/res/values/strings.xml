@@ -5,6 +5,9 @@
     <string name="albums">Albums</string>
     <string name="artists">Artists</string>
 
+    <string name="songTitle">Song Title</string>
+    <string name="artistTitle">Artist Title</string>
+
     <string name="numbers">Numbers</string>
 
     <string name="playerAlbumSample">Album of the Year</string>

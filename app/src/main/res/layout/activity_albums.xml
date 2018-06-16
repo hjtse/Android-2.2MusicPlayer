@@ -26,19 +26,19 @@
                 android:layout_margin="16dp">
 
                 <TextView
-                    android:id="@+id/albumTitle1"
+                    android:id="@+id/albumTitle"
                     style="@style/singer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="21" />
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/albumArtist"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/albumTitle1"
+                    android:layout_below="@+id/albumTitle"
                     android:text="Adele" />
 
                 <ImageView
@@ -48,7 +48,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:layout_alignTop="@+id/textView1"
+                    android:layout_alignTop="@+id/albumArtist"
                     android:layout_marginRight="16dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/cover" />

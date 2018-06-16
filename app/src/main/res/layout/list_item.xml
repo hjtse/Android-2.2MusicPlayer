@@ -7,13 +7,13 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/miwok_text_view"
+        android:id="@+id/main_text_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:text="lutti" />
 
     <TextView
-        android:id="@+id/default_text_view"
+        android:id="@+id/secondary_text_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:text="one" />
