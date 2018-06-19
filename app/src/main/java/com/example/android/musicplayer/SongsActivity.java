@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
+
 import java.util.ArrayList;
 
 public class SongsActivity extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class SongsActivity extends AppCompatActivity {
 
         // Create a list of words
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Song1", "ArtistA"));
+        words.add(new Word("@string/song1", "ArtistA"));
         words.add(new Word("Song2", "ArtistA"));
         words.add(new Word("Song3", "ArtistA"));
         words.add(new Word("Song4", "ArtistB"));
@@ -30,8 +31,8 @@ public class SongsActivity extends AppCompatActivity {
         // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(this, words);
 
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
+        // Find the {@link RecyclerView} object in the view hierarchy of the {@link Activity}.
+        // There should be a {@link RecyclerView} with the view ID called list, which is declared in the
         // word_list.xml file.
         ListView listView = (ListView) findViewById(R.id.list);
 

@@ -51,7 +51,7 @@
                     android:layout_alignTop="@+id/albumArtist"
                     android:layout_marginRight="16dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/cover" />
+                    android:src="@mipmap/cover" />
 
 
             </RelativeLayout>
@@ -98,7 +98,7 @@
                     android:layout_alignTop="@+id/textView2"
                     android:layout_marginRight="16dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/cover" />
+                    android:src="@mipmap/cover" />
 
 
             </RelativeLayout>
@@ -145,7 +145,7 @@
                     android:layout_alignTop="@+id/textView3"
                     android:layout_marginRight="16dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/cover" />
+                    android:src="@mipmap/cover" />
 
 
             </RelativeLayout>
@@ -192,7 +192,7 @@
                     android:layout_alignTop="@+id/textView4"
                     android:layout_marginRight="16dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/cover" />
+                    android:src="@mipmap/cover" />
 
 
             </RelativeLayout>
@@ -239,7 +239,7 @@
                     android:layout_alignTop="@+id/textView5"
                     android:layout_marginRight="16dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/cover" />
+                    android:src="@mipmap/cover" />
 
 
             </RelativeLayout>

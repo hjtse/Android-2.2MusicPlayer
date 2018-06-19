@@ -7,10 +7,21 @@
 
     <string name="songTitle">Song Title</string>
     <string name="artistTitle">Artist Title</string>
-
     <string name="numbers">Numbers</string>
-
     <string name="playerAlbumSample">Album of the Year</string>
+
+    <string name="song1">Song 1</string>
+    <string name="song2">Song 2</string>
+    <string name="song3">Song 3</string>
+    <string name="song4">Song 4</string>
+    <string name="song5">Song 5</string>
+    <string name="song6">Song 6</string>
+    <string name="song7">Song 7</string>
+    <string name="song8">Song 8</string>
+    <string name="song9">Song 9</string>
+    <string name="artistA">Artist A</string>
+    <string name="artistB">Artist B</string>
+    <string name="artistC">Artist C</string>
 
     <string name="showSongLyrics">Show song lyrics</string>
     <string name="continueFromLastSong">Play from last song</string>
